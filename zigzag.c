@@ -17,8 +17,20 @@ void main()
     {
         for(j=0;j<n;j++)
         {
-            sum1=sum1+a[i][j];
+           sum1=sum1+a[i][j];
              //printf("%d\n",sum1);
+            /* if(i==0)
+             {
+                sum1=sum1+a[i][j];
+             }
+             else if(i==n-1)
+             {
+                 sum1=sum1+a[i][j];
+             }
+             else if(i>0&&j==n-i-1&&j>0)
+             {
+                 sum1=sum1+a[i][j];
+             }*/
         }
     }
     for(i=n-1;i==n-1;i++)
@@ -33,7 +45,7 @@ void main()
     {
         for(j=0;j<n;j++)
         {
-            if(i==j&&j<n-1&&i>0)
+            if(i>0&&j==n-i-1&&j>0)
             {
                 sum1=sum1+a[i][j];
                  //printf("%d\n",sum1);
